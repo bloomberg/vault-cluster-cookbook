@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  data_bags_path: "test/fixtures/data_bags"
+
+platforms:
+  - name: ubuntu-14.04
+  - name: ubuntu-12.04
+  - name: centos-7.1
+  - name: centos-6.6
+
+suites:
+  - name: default
+    run_list:
+      - recipe[vault-cluster::default]
