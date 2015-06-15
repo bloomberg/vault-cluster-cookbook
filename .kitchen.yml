@@ -13,6 +13,6 @@ platforms:
   - name: centos-6.6
 
 suites:
-  - name: default
+  - name: bootstrap
     run_list:
-      - recipe[vault-cluster::default]
+      - recipe[vault-cluster::bootstrap]
