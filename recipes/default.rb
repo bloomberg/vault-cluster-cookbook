@@ -9,5 +9,5 @@ node.default['consul']['config']['verify_incoming'] = true
 node.default['consul']['config']['verify_outgoing'] = true
 include_recipe 'consul::default'
 
-node.default['vault']['config']['backend_type'] = :consul
+node.default['vault']['config']['backend_type'] = 'consul'
 include_recipe 'hashicorp-vault::default'
