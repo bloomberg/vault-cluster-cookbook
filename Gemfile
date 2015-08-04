@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
-gem 'chef-vault', '~> 2.2'
+gem 'chef-vault', '~> 2.6'
 
 group :lint do
   gem 'rubocop'
+  gem 'foodcritic'
 end
 
 group :kitchen_common do
