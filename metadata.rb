@@ -4,7 +4,7 @@ maintainer_email 'jbellone@bloomberg.net'
 license 'Apache 2.0'
 description 'Wrapper cookbook which installs and configures Vault with Consul as its backend.'
 long_description 'Wrapper cookbook which installs and configures Vault with Consul as its backend.'
-version '1.0.1'
+version '1.0.2'
 
 supports 'ubuntu', '>= 12.04'
 supports 'redhat', '>= 6.4'
