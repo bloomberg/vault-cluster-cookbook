@@ -20,7 +20,7 @@ Chef. The values from the node attributes set in the [default recipe](recipes/de
 are passed into the resources for both cookbooks.
 
 Out of the box the following platforms are certified to work and
-are tested using our [Test Kitchen][8] configuration. Additional platforms
+are tested using our [Test Kitchen][5] configuration. Additional platforms
 _may_ work, but your mileage may vary.
 - CentOS (RHEL) 6.6, 7.1
 - Ubuntu 12.04, 14.04
@@ -29,4 +29,5 @@ _may_ work, but your mileage may vary.
 [1]: https://www.vaultproject.io
 [2]: https://www.consul.io/
 [3]: https://github.com/johnbellone/vault-cookbook
-[3]: https://github.com/johnbellone/consul-cookbook
+[4]: https://github.com/johnbellone/consul-cookbook
+[5]: http://kitchen.ci/
