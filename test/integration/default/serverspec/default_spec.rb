@@ -1,4 +1,5 @@
-require 'spec_helper'
+require 'serverspec'
+set :backend, :exec
 
 describe command('which vault') do
   its(:exit_status) { should eq 0 }
