@@ -1,37 +1,19 @@
 source 'https://rubygems.org'
-gem 'chef-vault', '~> 2.6'
+gem 'chef-vault-testfixtures', '~> 0.3'
 
 group :lint do
   gem 'rubocop'
   gem 'foodcritic'
 end
 
-group :kitchen_common do
-  gem 'test-kitchen', '~> 1.4'
-end
-
-group :kitchen_vagrant do
-  gem 'kitchen-vagrant', '~> 0.17'
-end
-
-group :kitchen_cloud do
-  gem 'kitchen-openstack', '~> 1.8'
-end
-
-group :unit do
-  gem 'berkshelf'
+group :test, :integration, :unit do
   gem 'chefspec'
-end
-
-group :integration do
-  gem 'serverspec'
+  gem 'test-kitchen'
+  gem 'kitchen-inspec'
 end
 
 group :development do
-  gem 'guard'
-  gem 'guard-kitchen'
-  gem 'guard-rspec'
-  gem 'guard-rubocop'
+  gem 'awesome_print'
   gem 'rake'
   gem 'stove'
 end
