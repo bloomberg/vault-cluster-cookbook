@@ -1,4 +1,6 @@
-require 'spec_helper'
+require 'chef-vault/test_fixtures'
+require 'serverspec'
+set :backend, :exec
 
 describe command('which vault') do
   its(:exit_status) { should eq 0 }
