@@ -6,7 +6,7 @@ issues_url 'https://github.com/johnbellone/vault-cluster-cookbook/issues'
 license 'Apache 2.0'
 description 'Wrapper cookbook which installs and configures Vault with Consul as its backend.'
 long_description 'Wrapper cookbook which installs and configures Vault with Consul as its backend.'
-version '1.1.0'
+version '2.0.0'
 
 supports 'ubuntu', '>= 12.04'
 supports 'redhat', '>= 6.6'
