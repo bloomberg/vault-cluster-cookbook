@@ -6,6 +6,10 @@
 #
 include_recipe 'consul-cluster::default'
 
+poise_service_user node['hashicorp-vault']['service_user'] do
+  group node['hashicorp-vault']['service_group']
+end
+
 directory File.dirname(node['vault-cluster']['tls']['ssl_key']['path']) do
   recursive true
   owner node['hashicorp-vault']['service_user']
