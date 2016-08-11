@@ -29,6 +29,6 @@ ssl_certificate node['hashicorp-vault']['service_name'] do
   notifies :reload, "vault_service[#{name}]", :delayed
 end
 
-node.default['vault']['config']['backend_type'] = 'consul'
-node.default['vault']['config']['bag_item'] = 'consul'
+node.default['hashicorp-vault']['config']['backend_type'] = 'consul'
+node.default['hashicorp-vault']['config']['bag_item'] = 'consul'
 include_recipe 'hashicorp-vault::default'
