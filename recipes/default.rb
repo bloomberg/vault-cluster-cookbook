@@ -30,6 +30,5 @@ ssl_certificate node['hashicorp-vault']['service_name'] do
 end
 
 node.default['hashicorp-vault']['config']['backend_type'] = 'consul'
-node.default['hashicorp-vault']['config']['bag_item'] = 'consul'
 node.default['hashicorp-vault']['config']['tls_disable'] = false
 include_recipe 'hashicorp-vault::default'
